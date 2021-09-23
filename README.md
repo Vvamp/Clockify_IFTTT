@@ -7,7 +7,7 @@
 <a href="https://github.com/Vvamp/Clockify_IFTTT/pulls"><img src="https://img.shields.io/github/issues-pr/Vvamp/Clockify_IFTTT" alt="Pull Requests Badge"/></a>
 <a href="https://github.com/Vvamp/Clockify_IFTTT/issues"><img src="https://img.shields.io/github/issues/Vvamp/Clockify_IFTTT" alt="Issues Badge"/></a>
 <a href="https://github.com/Vvamp/Clockify_IFTTT/blob/master/LICENSE"><img alt="GitHub License Badge" src="https://img.shields.io/github/license/Vvamp/Clockify_IFTTT"></a>
-<a href="https://github.com/Vvamp/Clockify_IFTTT/actions/workflows/dotnet.yml"><img alt="GitHub Workflow Status Badge" src="https://img.shields.io/github/workflow/status/Vvamp/Clockify_IFTTT/dotnet"></a>
+<a href="https://github.com/Vvamp/Clockify_IFTTT/actions/workflows/dotnet.yml"><img alt="GitHub Workflow Status Badge" src="https://img.shields.io/github/workflow/status/Vvamp/Clockify_IFTTT/.NET"></a>
 </div>
 <br>
 <p align="center"><i>Loved the project? Please visit my <a href="https://vincentvansetten.com">Website</a></i></p>
