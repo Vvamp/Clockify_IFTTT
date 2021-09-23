@@ -22,7 +22,10 @@ This was made for a personal project, but it was released as I believe it's quit
 
 ### Prerequisits
 
-You will need the following: - .NET SDK 5.0.0 or higher - .NET Runtime 5.0.0 or higher
+You will need the following:
+
+- .NET SDK 5.0.0 or higher
+- .NET Runtime 5.0.0 or higher
 
 ### Install
 
