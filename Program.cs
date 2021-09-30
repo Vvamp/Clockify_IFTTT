@@ -127,6 +127,23 @@ namespace Clockify_IFTTT
                         }
                         await toggle(clockify, currentWorkspace, currentProject, currentUser, description);
                         break;
+                    case "status":
+                        Logger.info("Received http request to return status");
+
+                        bool isRunning = getActiveTimeEntry(clockify, currentWorkspace, currentUser) != null;
+                        HttpListenerContext context = listener.GetContext();
+                        HttpListenerRequest request = context.Request;
+                        HttpListenerResponse response = context.Response;
+                        string responseString = $"{isRunning.ToString()}";
+                        byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
+                        response.ContentLength64 = buffer.Length;
+                        System.IO.Stream output = response.OutputStream;
+                        output.Write(buffer, 0, buffer.Length);
+                        // You must close the output stream.
+                        output.Close();
+
+
+                        break;
 
                     default:
                         Logger.info("Base url called with no method. Ignoring...");
