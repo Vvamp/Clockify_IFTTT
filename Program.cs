@@ -131,9 +131,9 @@ namespace Clockify_IFTTT
                         Logger.info("Received http request to return status");
 
                         bool isRunning = getActiveTimeEntry(clockify, currentWorkspace, currentUser) != null;
-                        HttpListenerContext context = listener.GetContext();
-                        HttpListenerRequest request = context.Request;
-                        HttpListenerResponse response = context.Response;
+
+                        HttpListenerRequest request = ctx.Request;
+                        HttpListenerResponse response = ctx.Response;
                         string responseString = $"{isRunning.ToString()}";
                         byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                         response.ContentLength64 = buffer.Length;
